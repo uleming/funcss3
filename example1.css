@@ -1,0 +1,47 @@
+html, body{
+    margin: 0; padding: 0;overflow: auto;
+    width: 100%;height: 100%; box-sizing: border-box;
+    border: solid 1px red;
+}
+
+.box{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    top:0;left:0;right: 0;bottom: 0; margin: auto;
+    background-color: transparent;
+    border: solid 1px;
+    border-color: rgba(0,255,0,0.6);
+    box-shadow: 0 0 1px 0 rgba(0,255,0,0.9), inset 0 0 1px 0 rgba(0,255,0,0.9);
+    transition: all 8s;
+    transition-timing-function: easy-in-out;
+}
+
+.one{
+    transition-delay: 0s;
+}
+
+.two{
+    transition-delay: 0.1s;
+}
+
+.three{
+    transition-delay: 0.15s;
+}
+
+.four{
+    transition-delay: 0.24s;
+}
+
+.five{
+    transition-delay: 0.41s;
+}
+
+.six{
+    transition-delay: 0.59s;
+}
+
+.main:hover>div{
+    background-color: transparent;
+    -webkit-transform: rotateZ(4050deg);
+}
